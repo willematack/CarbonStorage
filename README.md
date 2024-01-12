@@ -18,6 +18,12 @@ In phase two, we implemented image-to-image translation models. First, we applie
 We have been able to achieve a very low MSE of <1% when translating the states. Here is an example result comparing the real state transition, and the simulated one (still working on improving the pressure grid):
 ![image](https://github.com/willematack/CarbonStorage/assets/44038988/5c337012-b7d6-4f94-b84d-8a899638b52c)
 
+## Files
+
+The full file structure is not included in this repo due to privacy, but some interesting files include SimulatorCNN.py which shows the U-Net architecture, or Train.py where learning, evaluation and visualization methods are included.
+
+Thanks for checking out this project!!
+
 
 ## References
 [1] Sun, A. Y. (2020). Optimal carbon storage reservoir management through deep reinforcement learning. Applied
