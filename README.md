@@ -17,7 +17,7 @@ First, training data (i.e. (state, action, state) tuples) was needed. The first 
 In phase two, we implemented image-to-image translation models. First, we applied U-Net - a convolutional autoencoder model. We used a architecture similar to that in [1], as shown in the image below:
 ![image](https://github.com/willematack/CarbonStorage/assets/44038988/12217864-87b2-4b4d-bfbd-fa637a6dbdce)
 
-We have been able to achieve a very low MSE of <1% when translating the states. Here is an example result comparing the real state transition, and the simulated one (still working on improving the pressure grid):
+We have been able to achieve a very low MSE of <1% when translating the states. And now transitions can be performed thousands of times faster, making the RL possible. Here is an example result comparing the real state transition, and the simulated one (still working on improving the pressure grid):
 ![image](https://github.com/willematack/CarbonStorage/assets/44038988/5c337012-b7d6-4f94-b84d-8a899638b52c)
 
 ## Files
