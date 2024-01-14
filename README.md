@@ -2,7 +2,7 @@
 
 I am assisting Professor [Sebastian Jaimungal](https://sebastian.statistics.utoronto.ca/) with one of his research projects in the Department of Statistics at the University of Toronto.
 
-This project is my part of a broader Reinforcement Learning Project, which I am working on with my partner [Elijah French](https://github.com/ElijahFrench). Note that due to privacy reasons, I could not include all code in this repo.
+This project is my part of a broader Reinforcement Learning Project, which I am working on with my partner [Elijah French](https://github.com/ElijahFrench). Note that due to privacy reasons, I could not include all code in this repo, but some relevant files are included.
 
 ## Broader Problem
 
