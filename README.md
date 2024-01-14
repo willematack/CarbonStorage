@@ -17,12 +17,19 @@ First, training data (i.e. (state, action, state) tuples) was needed. The first 
 In phase two, we implemented image-to-image translation models. First, we applied U-Net - a convolutional autoencoder model. We used a architecture similar to that in [1], as shown in the image below:
 ![image](https://github.com/willematack/CarbonStorage/assets/44038988/12217864-87b2-4b4d-bfbd-fa637a6dbdce)
 
+To attempt to improve the model, we have also implemented a pix2pix model. Pix2pix is a conditional GAN for image translation, which uses the same U-net architecture as the generator, and a PatchGAN as the discriminator. This model is adapted from [2]. A general setup for a cGAN is shown below in the image below. The discriminator, D, learns to classify pairs (original image, generated image) as either real or fake. The generator, G, learns to fool the discriminator. This is different from an unonditional GAN because the generator and discriminator both observe the original image.
+![image](https://github.com/willematack/CarbonStorage/assets/44038988/4cc2b7ff-b08a-40a1-9582-783617007b26)
+
+
 We have been able to achieve a very low MSE of <1% when translating the states. And now transitions can be performed thousands of times faster, making the RL possible. Here is an example result comparing the real state transition, and the simulated one (still working on improving the pressure grid):
 ![image](https://github.com/willematack/CarbonStorage/assets/44038988/5c337012-b7d6-4f94-b84d-8a899638b52c)
 
 ## Files
 
-The full file structure is not included in this repo due to privacy, but some interesting files include SimulatorCNN.py which shows the U-Net architecture, or Train.py where learning, evaluation and visualization methods are included.
+The full file structure is not included in this repo due to privacy, but some interesting files include:
+- SimulatorCNN.py which implements the U-Net architecture
+- SimulatorGAN.py is an implementation of the Pix2Pix cGAN
+- TrainUNET.py and TrainGAN.py where learning, evaluation and visualization methods are included, for the U-Net and cGAN architecture, respectively.
 
 ## Skills
 
@@ -33,3 +40,6 @@ Thanks for checking out this project!!
 ## References
 [1] Sun, A. Y. (2020). Optimal carbon storage reservoir management through deep reinforcement learning. Applied
 Energy, 278:115660
+
+[2] Isola, P., Zhu, J., Zhou, T., and Efros, A. A. (2016). Image-to-image translation with conditional adversarial networks.
+CoRR, abs/1611.07004.
