@@ -27,7 +27,7 @@ We have been able to achieve a very low MSE of <1% when translating the states. 
 ## Files
 
 The full file structure is not included in this repo due to privacy, but some interesting files include:
-- SimulatorCNN.py which implements the U-Net architecture
+- SimulatorUNET.py which implements the U-Net architecture
 - SimulatorGAN.py is an implementation of the Pix2Pix cGAN
 - TrainUNET.py and TrainGAN.py where learning, evaluation and visualization methods are included, for the U-Net and cGAN architecture, respectively.
 
